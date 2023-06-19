@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　シャドウユーティリティ
+<hr>
+<br><br><br>
+
+<div class="p-3">shadowなし</div><br>
+<div class="shadow p-3">shadowあり</div><br>
+<div class="shadow shadow-none p-3">shadowあり + shadow-none</div>
+
+<br><br><br>
+
+<div class="alert alert-info ">shadowなし</div><br>
+<div class="alert alert-info shadow">shadowあり</div>
+
+<br><br><br>
+
+<div class="shadow-sm p-3">shadow-sm</div><br>
+<div class="shadow-lg p-3">shadow-lg</div>
+
+
+<br><br><br>
+<hr>
+項　可視性ユーティリティ
+<hr>
+<br><br><br>
+
+<button class="btn btn-primary visible" type="button">visible</button>
+<button class="btn btn-primary invisible" type="button">invisible</button>
+
+<br><br><br>
+
+<button class="btn btn-primary" type="button">ボタン</button>
+<button class="btn btn-primary invisible" type="button">invisible</button>
+<button class="btn btn-primary" type="button">ボタン</button>
+<br><br>
+<button class="btn btn-primary" type="button">ボタン</button>
+<button class="btn btn-primary d-none" type="button">d-none</button>
+<button class="btn btn-primary" type="button">ボタン</button>
+
+
+<br><br><br>
+<hr>
+項　不透明度ユーティリティ
+<hr>
+<br><br><br>
+
+<button class="btn btn-primary opacity-0" type="button">opacity-0</button>
+<button class="btn btn-primary opacity-25" type="button">opacity-25</button>
+<button class="btn btn-primary opacity-50" type="button">opacity-50</button>
+<button class="btn btn-primary opacity-75" type="button">opacity-75</button>
+<button class="btn btn-primary opacity-100" type="button">opacity-100</button>
+
+
+<br><br><br>
+<hr>
+項　相互作用ユーティリティ
+<hr>
+<br><br><br>
+●テキストの選択
+<br><br><br>
+<p class="user-select-auto">user-select-auto：この段落をクリックすると、テキストは部分的に選択されます</p>
+<p class="user-select-all">user-select-all：この段落をクリックすると、テキスト全てが選択されます</p>
+<p class="user-select-none">user-select-none：この段落はクリックしても、テキストを選択出来ません</p>
+<br><br><br>
+●ポインタイベント対象
+<br><br><br>
+<p><a href="#" class="pe-auto">リンク</a>pe-auto：リンクはクリック出来ます</p>
+<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">リンク</a>pe-none：リンクはクリック出来ません</p>
+<br><br><br>
+<p class="pe-none">
+  <a href="#" tabindex="-1" aria-disabled="true">リンク１</a>リンク１はクリック出来ません
+  <a href="#" class="pe-auto">リンク２</a>リンク２はクリック出来ます
+</p>
+
+<br><br><br>
+<hr>
+項　横並びユーティリティ
+<hr>
+<br><br><br>
+
+<div class="bg-secondary text-light">
+  <div class="alert alert-primary">float-start</div>
+  <div class="alert alert-success">float-end</div>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+</div>
+
+<br><br><br>
+フロート
+<br><br><br>
+
+<div class="bg-secondary text-light">
+  <div class="float-start alert alert-primary">float-start</div>
+  <div class="float-end alert alert-success">float-end</div>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+</div>
+
+<br><br><br>
+レスポンシブ
+<br><br><br>
+
+<div class="bg-secondary text-light">
+  <div class="float-sm-start alert alert-primary">float-start</div>
+  <div class="float-sm-end alert alert-success">float-end</div>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+</div>
+<br><br><br>
+
+</div>
+
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

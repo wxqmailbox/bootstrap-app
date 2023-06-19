@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+
+項　モーダルダイアログ
+
+<br><br><br>
+
+<div class="modal" id="testModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testModal">
+  ボタン
+</button>
+
+<br><br><br>
+
+項　静的なモーダルダイアログ
+
+<br><br><br>
+
+<div class="modal"  data-bs-backdrop="static" data-bs-keyboard="false" id="staticModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticModal">
+  ボタン
+</button>
+
+
+<br><br><br>
+
+項　モーダルダイアログ<br>（スクロール付き）
+
+<br><br><br>
+
+<div class="modal" id="scrollableModal">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文<br>
+        （以下、長くするため 本文<br> を繰り返す）…
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+        本文<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scrollableModal">
+  ボタン
+</button>
+
+<br><br><br>
+
+項　垂直方向の中央配置
+
+<br><br><br>
+
+<div class="modal" id="centeredModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#centeredModal">
+  ボタン
+</button>
+
+
+<br><br><br>
+
+項　サイズ
+
+<br><br><br>
+
+<div class="modal" id="smModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="lgModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="xlModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button data-bs-target="#smModal" type="button" class="btn btn-primary" data-bs-toggle="modal"> ボタン</button>
+<button data-bs-target="#lgModal" type="button" class="btn btn-primary" data-bs-toggle="modal"> ボタン</button>
+<button data-bs-target="#xlModal" type="button" class="btn btn-primary" data-bs-toggle="modal"> ボタン</button>
+
+
+<br><br><br>
+
+項　フルスクリーン
+
+<br><br><br>
+
+<div class="modal" id="fullModal">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullModal">
+  ボタン
+</button>
+
+<br><br><br>
+レスポンシブ対応
+<br><br><br>
+
+<div class="modal" id="fullMdModal">
+  <div class="modal-dialog modal-fullscreen-lg-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullMdModal">
+  ボタン
+</button>
+
+<br><br><br>
+
+
+<br><br><br>
+
+項　アクセシビリティ
+
+<br><br><br>
+
+<div class="modal fade" id="fadeModal" tabindex="-1" aria-labelledby="fadeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fadeModalLabel">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">本文</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">保存する</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button data-bs-target="#fadeModal" type="button" class="btn btn-primary" data-bs-toggle="modal"> ボタン</button>
+
+<br><br><br>
+
+項　切り替え
+
+<br><br><br>
+
+<div class="modal fade" id="betweenModal1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">モーダル１</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文１
+      </div>
+      <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#betweenModal2" data-bs-toggle="modal" data-bs-dismiss="modal">モーダル２を開く
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="betweenModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">モーダル２</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        本文２
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#betweenModal1" data-bs-toggle="modal" data-bs-dismiss="modal">モーダル１に戻る</button>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<button data-bs-target="#betweenModal1" type="button" class="btn btn-primary" data-bs-toggle="modal">モーダル１を開く</button>
+
+
+<br><br><br>
+
+項　ボタンにより内容を変更する
+
+<br><br><br>
+
+<div class="modal" id="dataModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataModalTitle">タイトル</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>メッセージ：</label>
+            <textarea class="form-control" id="dataModalSendMessage"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">送信</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button data-bs-target="#dataModal" data-bs-department="総務" type="button" class="btn btn-primary" data-bs-toggle="modal">総務</button>
+<button data-bs-target="#dataModal" data-bs-department="営業" type="button" class="btn btn-primary" data-bs-toggle="modal">営業</button>
+<button data-bs-target="#dataModal" data-bs-department="システム" type="button" class="btn btn-primary" data-bs-toggle="modal">システム</button>
+
+</div>
+
+
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+
+<script>
+const dataModal = document.getElementById('dataModal')
+dataModal.addEventListener('show.bs.modal', function (event) {
+  const modal = event.currentTarget
+  const button = event.relatedTarget
+  const department = button.getAttribute('data-bs-department')
+  const dataModalTitle = modal.querySelector('#dataModalTitle')
+  const dataModalSendMessage = modal.querySelector('#dataModalSendMessage')
+  dataModalTitle.textContent = department + '部門にメッセージを送る'
+  dataModalSendMessage.value = department + '部門　担当者様'
+})
+</script>
+    
+  </body>
+</html>

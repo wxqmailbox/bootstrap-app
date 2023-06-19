@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+
+<br><br><br>
+<hr>
+項　フレックスボックス
+<hr>
+<br><br><br>
+
+<div class="d-flex border p-1 m-3">d-flex</div>
+<div class="d-inline-flex border p-1 m-3">d-inline-flex</div>
+
+<br><br><br>
+●レスポンシブ
+<br><br><br>
+
+<div class="d-sm-inline-flex border p-1 m-3">d-sm-inline-flex</div>
+
+
+<br><br><hr>
+<hr>
+項　方向
+<hr>
+<br><br><br>
+flex-row
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-row-reverse
+<br><br><br>
+
+<div class="d-flex flex-row-reverse border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column
+<br><br><br>
+
+<div class="d-flex flex-column border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column-reverse
+<br><br><br>
+
+<div class="d-flex flex-column-reverse border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+●レスポンシブ
+<br><br><hr>
+
+<div class="d-flex flex-column flex-sm-row border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+<hr>
+項　主軸による配置（主軸が水平方向の場合）
+<hr>
+<br><br><br>
+.justify-content-start
+<br><br><br>
+
+<div class="d-flex flex-row justify-content-start border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+.justify-content-end
+<br><br><br>
+
+
+<div class="d-flex flex-row justify-content-end border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+.justify-content-center
+<br><br><br>
+
+<div class="d-flex flex-row justify-content-center border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+.justify-content-between
+<br><br><br>
+
+<div class="d-flex flex-row justify-content-between border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+.justify-content-around
+<br><br><br>
+
+<div class="d-flex flex-row justify-content-around border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+.justify-content-evenly
+<br><br><br>
+
+<div class="d-flex flex-row justify-content-evenly border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+<hr>
+主軸による配置（主軸が垂直方向の場合）
+<hr>
+<br><br><br>
+flex-column .justify-content-start
+<br><br><br>
+<div class="d-flex flex-column justify-content-start border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column .justify-content-end
+<br><br><br>
+
+<div class="d-flex flex-column justify-content-end border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column .justify-content-center
+<br><br><br>
+
+<div class="d-flex flex-column justify-content-center border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column .justify-content-between
+<br><br><br>
+
+<div class="d-flex flex-column justify-content-between border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column .justify-content-around
+<br><br><br>
+
+<div class="d-flex flex-column justify-content-around border  p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+flex-column .justify-content-evenly
+<br><br><br>
+
+<div class="d-flex flex-column justify-content-evenly border  p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+
+<br><br><br>
+<hr>
+項　交差軸による配置（主軸が水平方向の場合）
+<hr>
+<br><br><br>
+ .align-items-start
+<br><br><br>
+<div class="d-flex flex-row align-items-start border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ .align-items-end 
+<br><br><br>
+
+<div class="d-flex flex-row align-items-end border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ .align-items-center 
+<br><br><br>
+
+<div class="d-flex flex-row align-items-center border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ .align-items-baseline 
+<br><br><br>
+
+<div class="d-flex flex-row align-items-baseline border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ .align-items-stretch 
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+
+<br><br><br>
+<hr>
+項　交差軸による配置（主軸が垂直方向の場合）
+<hr>
+<br><br><br>
+ flex-column .align-items-start
+<br><br><br>
+
+<div class="d-flex flex-column align-items-start border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ flex-column .align-items-end
+<br><br><br>
+
+<div class="d-flex flex-column align-items-end border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ flex-column .align-items-center 
+<br><br><br>
+
+<div class="d-flex flex-column align-items-center border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ flex-column .align-items-baseline 
+<br><br><br>
+
+<div class="d-flex flex-column align-items-baseline border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ flex-column .align-items-stretch 
+<br><br><br>
+
+<div class="d-flex flex-column align-items-stretch border p-1 m-1" >
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+
+<br><br><br>
+<hr>
+項　交差軸による配置（個別）
+<hr>
+<br><br><br>
+●主軸が水平方向の場合
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-start
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-start border p-1 m-1">align-self-start</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-end
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-end border p-1 m-1">align-self-end</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-center
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-center border p-1 m-1">align-self-center</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-baseline
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-baseline border p-1 m-1">align-self-baseline</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-stretch
+<br><br><br>
+
+<div class="d-flex flex-row align-items-stretch border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-stretch border p-1 m-1">align-self-stretch</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+<hr>
+●主軸が垂直方向の場合
+<hr>
+<br><br><br>
+.align-self-start
+<br><br><br>
+
+<div class="d-flex flex-column align-items-stretch border p-1 m-1" >
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-start border p-1 m-1">align-self-start</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-end
+<br><br><br>
+
+<div class="d-flex flex-column align-items-stretch border p-1 m-1">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-end border p-1 m-1">align-self-end</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-center
+<br><br><br>
+
+<div class="d-flex flex-column align-items-stretch border p-1 m-1">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-center border p-1 m-1">align-self-center</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+.align-self-baseline
+<br><br><br>
+
+<div class="d-flex flex-column align-items-stretch border p-1 m-1">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-baseline border p-1 m-1">align-self-baseline</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+.align-self-stretch
+<br><br><br>
+
+<div class="d-flex flex-column align-items-stretch border p-1 m-1">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="align-self-stretch border p-1 m-1">align-self-stretch</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+
+<br><br><br>
+<hr>
+項　交差軸による配置（全体）
+<hr>
+
+<br><br><br>
+●交差軸の先頭に配置
+<br><br><br>
+
+<div class="d-flex align-items-start flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+<div class="d-flex align-content-start flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+●交差軸の末尾に配置
+<br><br><br>
+
+<div class="d-flex align-items-end flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+<div class="d-flex align-content-end flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+●交差軸の中央に配置
+<br><br><br>
+
+<div class="d-flex align-items-center flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+<div class="d-flex align-content-center flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+●交差軸を均等に配置
+<br><br><br>
+
+<div class="d-flex align-items-between flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+<div class="d-flex align-content-between flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+●交差軸を等間隔に配置
+<br><br><br>
+
+<div class="d-flex align-items-around flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+<div class="d-flex align-content-around flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+<br><br><br>
+●交差軸上でストレッチさせた配置
+<br><br><br>
+
+<div class="d-flex align-items-stretch flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+<br><br><br>
+<div class="d-flex align-content-stretch flex-wrap border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+  <div class="border p-1 m-1">アイテム</div>
+</div>
+
+
+<br><br><br>
+<hr>
+項　コンテンツ内で可能な限り広げる
+<hr>
+<br><br><br>
+.flex-fill 無し
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ .flex-fill 有り
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="flex-fill border p-1 m-1">アイテム１アイテム１</div>
+  <div class="flex-fill border p-1 m-1">アイテム２</div>
+  <div class="flex-fill border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+●flex-column
+<br><br><br>
+.flex-fill 無し
+<br><br><br>
+
+<div class="d-flex flex-column border p-1 m-1" style="height:250px;">
+  <div class="border p-1 m-1">アイテム１<br>アイテム１<br>アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+</div>
+
+<br><br><br>
+ .flex-fill 有り
+<br><br><br>
+
+<div class="d-flex flex-column border p-1 m-1" style="height:250px;">
+  <div class="flex-fill border p-1 m-1">アイテム１<br>アイテム１<br>アイテム１</div>
+  <div class="flex-fill border p-1 m-1">アイテム２</div>
+  <div class="flex-fill border p-1 m-1">アイテム３</div>
+</div>
+
+
+
+<br><br><br>
+<hr>
+項　伸ばす/縮める
+<hr>
+<br><br><br>
+●伸ばす
+<br><br><br>
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="border p-1 m-1">xxxx-xxxx-x</div>
+  <div class="border p-1 m-1">xxxx-xxxx-x</div>
+  <div class="border p-1 m-1">xxxx-xxxx-x</div>
+</div>
+
+<br><br><br>
+ .flex-grow-* 有り
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="flex-grow-0 border p-1 m-1">flex-grow-0</div>
+  <div class="flex-grow-1 border p-1 m-1">flex-grow-1</div>
+  <div class="flex-grow-0 border p-1 m-1">flex-grow-0</div>
+</div>
+
+<br><br><br>
+●縮める
+<br><br><br>
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="w-100 border p-1 m-1">w-100</div>
+  <div class="border p-1 m-1">xxxx-xxxxx-x</div>
+  <div class="border p-1 m-1">xxxx-xxxxx-x</div>
+</div>
+
+<br><br><br>
+ .flex-shrink-* 有り
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="w-100 border p-1 m-1">w-100</div>
+  <div class="flex-shrink-1 border p-1 m-1">flex-shrink-1</div>
+  <div class="flex-shrink-0 border p-1 m-1">flex-shrink-0</div>
+</div>
+
+<br><br><br>
+<hr>
+項　オートマージン
+<hr>
+<br><br><br>
+.ms-auto
+<br><br><br>
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="ms-auto border p-1 m-1">ms-auto</div>
+</div>
+
+<br><br><br>
+.me-auto 
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="me-auto border p-1 m-1">me-auto</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+</div>
+
+<br><br><br>
+.mx-auto 
+<br><br><br>
+
+<div class="d-flex flex-row border p-1 m-1">
+  <div class="mx-auto border p-1 m-1">mx-auto</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+</div>
+
+<br><br><br>
+flex-columnのパターン
+.mt-auto 
+<br><br><br>
+
+<div class="d-flex flex-column border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="mt-auto border p-1 m-1">mt-auto</div>
+</div>
+
+<br><br><br>
+.mt-auto に .align-items-start を組み合わせ
+<br><br><br>
+
+<div class="d-flex flex-column align-items-start border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="mt-auto border p-1 m-1">mt-auto</div>
+</div>
+
+<br><br><br>
+.mb-auto 
+<br><br><br>
+
+<div class="d-flex flex-column border p-1 m-1" style="height:200px;">
+  <div class="mb-auto border p-1 m-1">mb-auto</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+</div>
+
+<br><br><br>
+.mb-auto に .align-items-end を組み合わせ
+<br><br><br>
+
+<div class="d-flex flex-column align-items-end border p-1 m-1" style="height:200px;">
+  <div class="mb-auto border p-1 m-1">mb-auto</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+</div>
+
+<br><br><br>
+.my-auto 
+<br><br><br>
+
+<div class="d-flex flex-column border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="my-auto border p-1 m-1">my-auto</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+</div>
+
+<br><br><br>
+.my-auto に .align-items-center を組み合わせ
+<br><br><br>
+
+<div class="d-flex flex-column align-items-center border p-1 m-1" style="height:200px;">
+  <div class="border p-1 m-1">xx-xxxx</div>
+  <div class="my-auto border p-1 m-1">my-auto</div>
+  <div class="border p-1 m-1">xx-xxxx</div>
+</div>
+
+
+
+<br><br><br>
+<hr>
+項　折り返し
+<hr>
+<br><br><br>
+●折り返し
+<br><br><br>
+
+<div class="d-flex flex-wrap border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+  <div class="border p-1 m-1">アイテム４</div>
+  <div class="border p-1 m-1">アイテム５</div>
+  <div class="border p-1 m-1">アイテム６</div>
+  <div class="border p-1 m-1">アイテム７</div>
+  <div class="border p-1 m-1">アイテム８</div>
+</div>
+
+<br><br><br>
+●折り返さない
+<br><br><br>
+
+<div class="d-flex flex-nowrap border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+  <div class="border p-1 m-1">アイテム４</div>
+  <div class="border p-1 m-1">アイテム５</div>
+  <div class="border p-1 m-1">アイテム６</div>
+  <div class="border p-1 m-1">アイテム７</div>
+  <div class="border p-1 m-1">アイテム８</div>
+</div>
+
+<br><br><br>
+●逆方向で折り返し
+<br><br><br>
+
+<div class="d-flex flex-wrap-reverse border p-1 m-1">
+  <div class="border p-1 m-1">アイテム１</div>
+  <div class="border p-1 m-1">アイテム２</div>
+  <div class="border p-1 m-1">アイテム３</div>
+  <div class="border p-1 m-1">アイテム４</div>
+  <div class="border p-1 m-1">アイテム５</div>
+  <div class="border p-1 m-1">アイテム６</div>
+  <div class="border p-1 m-1">アイテム７</div>
+  <div class="border p-1 m-1">アイテム８</div>
+</div>
+
+<br><br><br>
+<hr>
+項　順序
+<hr>
+<br><br><br>
+
+<div class="d-flex border p-1 m-1">
+  <div class="order-4 border p-1 m-1">order-4</div>
+  <div class="order-1 border p-1 m-1">order-1</div>
+  <div class="order-last border p-1 m-1">order-last</div>
+  <div class="order-5 border p-1 m-1">order-5</div>
+  <div class="order-3 border p-1 m-1">order-3</div>
+  <div class="order-first border p-1 m-1">order-first</div>
+  <div class="order-0 border p-1 m-1">order-0</div>
+  <div class="order-2 border p-1 m-1">order-2</div>
+</div>
+
+
+<br><br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

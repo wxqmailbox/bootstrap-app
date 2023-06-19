@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:100px;">
+
+<br><br><br>
+<hr>
+項　省略記号による切り捨て
+<hr>
+<br><br><br>
+グリッドシステム
+<br><br><br>
+
+<div class="col-1 text-truncate">
+TextTextTextTextTextTextTextTextText
+</div>
+<div class="col-2 text-truncate">
+TextTextTextTextTextTextTextTextText
+</div>
+
+<br><br><br>
+ブロック要素
+<br><br><br>
+
+<p class="text-truncate" style="max-width: 100px;">
+  TextTextTextTextTextTextTextTextText
+</p>
+
+<br><br><br>
+インライン要素
+<br><br><br>
+
+<span class="d-inline-block text-truncate" style="max-width: 100px;">
+  TextTextTextTextTextTextTextTextText
+</span>
+
+<br><br><br>
+<hr>
+項　色付きリンク
+<hr>
+<br><br><br>
+
+<div class="p-3" style="background:#cccccc;">
+  <a href="#" class="link-primary">link-primary</a><br>
+  <a href="#" class="link-secondary">link-secondary</a><br>
+  <a href="#" class="link-success">link-success</a><br>
+  <a href="#" class="link-danger">link-danger</a><br>
+  <a href="#" class="link-warning">link-warning</a><br>
+  <a href="#" class="link-info">link-info</a><br>
+  <a href="#" class="link-light">link-light</a><br>
+  <a href="#" class="link-dark">link-dark</a><br>
+</div>
+
+<br><br><br>
+<hr>
+項　垂直の区切り線
+<hr>
+<br><br><br>
+
+<div class="vr"></div>
+
+<br><br><br>
+高さ
+<br><br><br>
+
+<button class="btn btn-primary mx-2" type="button">はい</button>
+<div class="vr" style="min-height: 3em;"></div>
+<button class="btn btn-danger mx-2" type="button">いいえ</button>
+
+<br><br><br>
+d-flexを使用
+<br><br><br>
+
+<div class="d-flex" style="height: 50px;">
+  <div class="vr"></div>
+</div>
+
+<br><br><br>
+
+<div class="d-flex align-items-center" style="height: 50px;">
+  <button class="btn btn-primary mx-2" type="button">はい</button>
+  <div class="vr" style="min-height: 3em;"></div>
+  <button class="btn btn-danger mx-2" type="button">いいえ</button>
+</div>
+
+<br><br><br>
+幅
+<br><br><br>
+
+<div class="vr" style="width: 5px; height: 50px;"></div>
+
+<br><br><br>
+色
+<br><br><br>
+
+<div class="d-flex p-3" style="height: 100px; background:#cccccc;">
+  <div class="text-primary vr m-2"></div>
+  <div class="text-secondary vr m-2"></div>
+  <div class="text-success vr m-2"></div>
+  <div class="text-danger vr m-2"></div>
+  <div class="text-warning vr m-2"></div>
+  <div class="text-info vr m-2"></div>
+  <div class="text-light vr m-2"></div>
+  <div class="text-dark vr m-2"></div>
+</div>
+
+<br><br><br>
+<hr>
+項　積み重ねる
+<hr>
+<br><br><br>
+垂直方向
+<br><br><br>
+
+<div class="vstack">
+  <button class="btn btn-primary" type="button">ボタン１</button>
+  <button class="btn btn-secondary" type="button">ボタン２</button>
+  <button class="btn btn-success" type="button">ボタン３</button>
+</div>
+
+<br><br><br>
+余白
+<br><br><br>
+
+<div class="vstack gap-3">
+  <button class="btn btn-primary" type="button">ボタン１</button>
+  <button class="btn btn-secondary" type="button">ボタン２</button>
+  <button class="btn btn-success" type="button">ボタン３</button>
+</div>
+
+<br><br><br>
+幅
+<br><br><br>
+
+<div class="vstack gap-3 col-md-6 mx-auto">
+  <button class="btn btn-primary" type="button">ボタン１</button>
+  <button class="btn btn-secondary" type="button">ボタン２</button>
+  <button class="btn btn-success" type="button">ボタン３</button>
+</div>
+
+<br><br><br>
+水平方向
+<br><br><br>
+
+<div class="hstack">
+  <div class="alert alert-primary">アラート１</div>
+  <div class="alert alert-secondary">アラート２</div>
+  <div class="alert alert-success">アラート３</div>
+</div>
+
+<br><br><br>
+余白
+<br><br><br>
+
+<div class="hstack gap-3">
+  <div class="alert alert-primary">アラート１</div>
+  <div class="alert alert-secondary">アラート２</div>
+  <div class="alert alert-success">アラート３</div>
+</div>
+
+<br><br><br>
+配置
+<br><br><br>
+
+<div class="hstack gap-3">
+  <div class="alert alert-primary">アラート１</div>
+  <div class="alert alert-secondary me-auto">アラート２</div>
+  <div class="alert alert-success">アラート３</div>
+</div>
+
+<br><br><br>
+区切り線
+<br><br><br>
+
+<div class="hstack gap-3">
+  <div class="alert alert-primary">アラート１</div>
+  <div class="d-flex" style="height: 100px;">
+    <div class="vr text-primary"></div>
+  </div>
+  <div class="alert alert-secondary me-auto">アラート２</div>
+  <div class="alert alert-success">アラート３</div>
+</div>
+
+
+<br><br><br>
+<hr>
+項　比率
+<hr>
+<br><br><br>
+１：１
+<br><br><br>
+
+<div class="ratio ratio-1x1 w-25">
+  <object type="image/png" data="test.png"></object>
+</div>
+
+<br><br><br>
+４：３
+<br><br><br>
+
+<div class="ratio ratio-4x3 w-25">
+  <object type="image/png" data="test.png"></object>
+</div>
+
+<br><br><br>
+１６：９
+<br><br><br>
+<div class="ratio ratio-16x9 w-25">
+  <object type="image/png" data="test.png"></object>
+</div>
+
+<br><br><br>
+２１：９
+<br><br><br>
+
+<div class="ratio ratio-21x9 w-25">
+  <object type="image/png" data="test.png"></object>
+</div>
+
+<br><br><br>
+２：１
+<br><br><br>
+
+<div class="ratio w-25" style="--bs-aspect-ratio: calc(1 / 2 * 100%);">
+  <object type="image/png" data="test.png"></object>
+</div>
+
+<br><br><br>
+
+</div>
+
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

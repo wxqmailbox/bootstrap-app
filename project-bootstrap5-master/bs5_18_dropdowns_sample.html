@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　ドロップダウン
+<hr>
+<br><br><br>
+
+<div class="dropdown">
+  <button data-bs-toggle="dropdown">
+    ボタン
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+トグル形式にする
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+●ボタンの色
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+
+
+<br><br><br>
+●他のタグ
+<br><br><br>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><button class="dropdown-item" type="button">アイテム１</button></li>
+    <li><button class="dropdown-item" type="button">アイテム２</button></li>
+    <li><button class="dropdown-item" type="button">アイテム３</button></li>
+  </ul>
+</div>
+
+<br><br>
+<br><br><br>
+<hr>
+項　ボタンの大きさ
+<hr>
+<br><br><br>
+大きい
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    btn-lg
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+小さい
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    btn-sm
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+
+<br><br><br>
+<hr>
+項　ヘッダー/セパレーター/分割ボタン
+<hr>
+<br><br><br>
+ヘッダー/セパレーター
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><span class="dropdown-header">ヘッダー</span></li>
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><hr></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br><br><br><br>
+●分割ボタン
+<br><br><br>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary">ボタン</button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"  aria-expanded="false">
+    <span  class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+
+<br><br><br><br><br><br>
+<hr>
+項　方向
+<hr>
+<br><br><br><br><br><br>
+
+<div class="dropup">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+
+<br><br><br>
+<hr>
+項　ドロップメニュー
+<hr>
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    dropdown-menu-end を付けていない
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+<br><br><br><br><br><br>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    dropdown-menu-end を付けている
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br><br><br><br>
+・レスポンシブ
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    dropdown-menu-md-end を付けている
+  </button>
+  <ul class="dropdown-menu dropdown-menu-md-end" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br><br><br><br>
+・組み合わせ
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    .dropdown-menu-end と .dropdown-menu-md-start
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-md-start" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br><br><br><br>
+●ダーク色
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+●テキスト
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    テキスト表示
+  </button>
+  <div class="dropdown-menu p-2 text-muted" style="max-width: 200px;">
+  <p> テキストテキストテキストテキストテキストテキスト </p>
+  <p class="mb-0">てきすとてきすとてきすとてきすとてきすとてきすと</p>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+●フォーム
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    フォーム表示
+  </button>
+  <div class="dropdown-menu">
+  <form class="px-2">
+    <div class="mb-2">
+      <label for="myText" class="form-label">テキスト</label>
+      <input type="text" class="form-control" id="myText" placeholder="テキストを入力してください">
+    </div>
+    <button type="submit" class="btn btn-primary">送信</button>
+  </form>
+  <hr class="dropdown-divider">
+  <a class="dropdown-item" href="#">前へ</a>
+  <a class="dropdown-item" href="#">次へ</a>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br>
+<hr>
+項　ドロップメニューの表示位置
+<hr>
+<br><br><br>
+オフセット
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-offset="20,30" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br><br><br><br><br>
+分割ボタンのメニュー表示
+<br><br><br>
+data-bs-reference="parent" 無し
+<br><br><br>
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary">ボタン</button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-splt" data-bs-toggle="dropdown"  aria-expanded="false">
+    <span  class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+<br><br><br><br><br><br>
+data-bs-reference="parent" 有り
+<br><br><br>
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary">ボタン</button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-splt" data-bs-reference="parent" data-bs-toggle="dropdown"  aria-expanded="false">
+    <span  class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+
+</div>
+<br><br><br>
+
+<br><br><br>
+<hr>
+項　メニューアイテム
+<hr>
+<br><br><br>
+●アクティブ
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item active" href="#" aria-current="true">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+●無効
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+●非インタラクティブ
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    ボタン
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><span class="dropdown-item-text">非インタラクティブ</span></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+
+<br><br><br><br><br><br>
+<hr>
+項　自動クローズの調整
+<hr>
+<br><br><br>
+・内側
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-auto-close="inside" data-bs-toggle="dropdown" aria-expanded="false">
+    外側をクリックしても閉じない
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+・外側
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
+    内側をクリックしても閉じない
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+・しない
+<br><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-auto-close="false" data-bs-toggle="dropdown" aria-expanded="false">
+    ドロップボタンのクリックのみ閉開
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">アイテム１</a></li>
+    <li><a class="dropdown-item" href="#">アイテム２</a></li>
+    <li><a class="dropdown-item" href="#">アイテム３</a></li>
+  </ul>
+</div>
+
+
+
+<br><br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+

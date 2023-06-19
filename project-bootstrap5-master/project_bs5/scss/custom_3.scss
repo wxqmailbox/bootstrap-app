@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$primary-tint: tint-color($primary, 50%);
+$theme-tint-colors: (
+  "primary-tint": $primary-tint
+);
+$theme-colors: map-merge($theme-colors, $theme-tint-colors);
+
+@import "../node_modules/bootstrap/scss/alert";

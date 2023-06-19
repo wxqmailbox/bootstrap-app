@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　テキストの配置
+<hr>
+<br><br><br>
+.text-{align} 
+<br><br><br>
+<p class="text-start">text-start</p>
+<p class="text-center">text-center</p>
+<p class="text-end">text-end</p>
+<br><br><br>
+.text-{breakpoint}-{align}
+<br><br><br>
+<p class="text-md-center">text-md-center</p>
+<br><br><br>
+
+
+
+<br><br><br>
+<hr>
+項　フォントサイズ
+<hr>
+<br><br><br>
+<p class="fs-1">fs-1</p>
+<p class="fs-2">fs-2</p>
+<p class="fs-3">fs-3</p>
+<p class="fs-4">fs-4</p>
+<p class="fs-5">fs-5</p>
+<p class="fs-6">fs-6</p>
+<br><br><br>
+
+<br><br><br>
+補足
+<br><br><br>
+<h1>h1</h1>
+<p class="h1">h1</p>
+<p class="fs-1">fs-1</p>
+
+
+<br><br><br>
+<hr>
+項　テキストの自動改行
+<hr>
+<br><br><br>
+
+
+<br><br><br>
+ .text-wrap 
+<br><br><br>
+<div class="text-wrap bg-info" style="width: 100px;">
+  What is this? This is a pen.
+</div>
+
+<br><br><br>
+「長い文字列」
+<br><br><br>
+<div class="text-wrap bg-info" style="width: 100px;">
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</div>
+
+<br><br><br>
+ .text-nowrap 
+<br><br><br>
+<div class="text-nowrap bg-info" style="width: 100px;">
+  What is this? This is a pen.
+</div>
+
+<br><br><br>
+<hr>
+項　長い文字列の改行
+<hr>
+<br><br><br>
+
+<br><br><br>
+ .text-break 無し
+<br><br><br>
+
+<div class="bg-info" style="width: 200px;">
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</div>
+
+<br><br><br>
+ .text-break 有り
+<br><br><br>
+<div class="text-break bg-info" style="width: 200px;">
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</div>
+
+<br><br><br>
+同じ動作
+<br><br><br>
+<div class="bg-info" style="word-wrap: break-word; word-break: break-word; width: 200px;">
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</div>
+
+
+<br><br><br>
+<hr>
+項　文字の太さ/斜体
+<hr>
+<br><br><br>
+
+<br><br><br>
+<p class="fw-bold">fw-bold</p>
+<p class="fw-bolder">fw-bolder</p>
+<p class="fw-normal">fw-normal</p>
+<p class="fw-light">fw-light</p>
+<p class="fw-lighter">fw-lighter</p>
+<br><br><br>
+●斜体
+<br><br><br>
+<p class="fst-italic">fst-italic</p>
+<p class="fst-normal">fst-normal</p>
+<br><br><br>
+
+
+<br><br><br>
+<hr>
+項　装飾/行間/等幅
+<hr>
+<br><br><br>
+
+<br><br><br>
+●装飾
+<br><br><br>
+<p class="text-decoration-underline">text-decoration-underline</p>
+<p class="text-decoration-line-through">text-decoration-line-through</p>
+<a href="#" class="text-decoration-none">text-decoration-none</a>
+<br><br><br>
+
+<br><br><br>
+●行間
+<br><br><br>
+<div class="lh-1" style="width: 150px;">
+  lh-1 lh-1 lh-1 lh-1 lh-1 lh-1 lh-1 lh-1 lh-1 lh-1 
+</div>
+<br>
+<div class="lh-sm" style="width: 170px;">
+  lh-sm lh-sm lh-sm lh-sm lh-sm lh-sm lh-sm lh-sm 
+</div>
+<br>
+<div class="lh-base" style="width: 170px;">
+  lh-base lh-base lh-base lh-base lh-base lh-base 
+</div>
+<br>
+<div class="lh-lg" style="width: 170px;">
+  lh-lg lh-lg lh-lg lh-lg lh-lg lh-lg lh-lg lh-lg 
+</div>
+<br><br><br>
+
+<br><br><br>
+●等幅
+<br><br><br>
+<p class="font-monospace">font-monospace</p>
+<p>abcdefghijklmn</p>
+<br><br><br>
+
+
+<br><br><br>
+<hr>
+項　色をリセットする
+<hr>
+<br><br><br>
+
+<br><br><br>
+<p class="text-success">
+  text-success <a href="#" class="text-reset">text-reset</a> text-success
+</p>
+<br><br><br>
+
+<br><br><br>
+<hr>
+項　大文字小文字の変換
+<hr>
+<br><br><br>
+<br><br><br>
+<p class="text-lowercase">Lowercase</p>
+<p class="text-uppercase">Uppercase</p>
+<p class="text-capitalize">this is a pen</p>
+<br><br><br>
+
+
+
+<br><br><br>
+<hr>
+項　省略記号による切り捨て
+<hr>
+<br><br><br>
+
+<br><br><br>
+●グリッドシステム
+<br><br><br>
+<div class="col-1 text-truncate">
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+<div class="col-2 text-truncate">
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+<br><br><br>
+
+<br><br><br>
+●ブロック要素タグ
+<br><br><br>
+<p class="text-truncate" style="max-width: 100px;">
+  aaaaaaaaaaaaaaaa
+</p>
+<br><br><br>
+
+<br><br><br>
+●インライン要素タグ
+<br><br><br>
+<span class="d-inline-block text-truncate" style="max-width: 100px;">
+  aaaaaaaaaaaaaaaa
+</span>
+<br><br><br>
+
+<br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　サーバーサイド
+<hr>
+<br><br><br>
+●サーバーサイド
+<br><br><br>
+
+<input class="form-control is-valid" type="text" value="テキスト" required>
+<div class="valid-feedback">
+  入力済み
+</div>
+
+<br><br><br>
+
+<select class="form-select is-invalid" required>
+  <option value="" selected disabled>選択してください</option>
+  <option value="1">項目</option>
+</select>
+<div class="invalid-feedback">
+  選択されてません
+</div>
+
+<br><br><br>
+
+インプットグループ
+<br><br><br>
+
+<div class="input-group has-validation">
+  <span class="input-group-text">@</span>
+  <input class="form-control is-valid" type="text" value="テキスト" required>
+  <div class="valid-feedback">
+    フィードバック
+  </div>
+</div>
+
+<br><br><br>
+<hr>
+項　クライアントサイド
+<hr>
+<br><br><br>
+標準
+<br><br><br>
+
+<form>
+  <input class="form-control" type="text" value="テキスト" required>
+  <button class="btn btn-primary" type="submit">送信</button>
+</form>
+
+<br><br><br>
+was-validated
+<br><br><br>
+
+<form class="was-validated">
+  <input class="form-control" type="text" value="テキスト" required>
+  <div class="valid-feedback">入力済み</div>
+  <div class="invalid-feedback">入力されてません</div>
+</form>
+
+<br><br><br>
+Bootstrapスタイル適用する
+<br><br><br>
+<form class="my-validation" novalidate>
+<input class="form-control" type="text" value="テキスト" required>
+<div class="invalid-feedback">入力されてません</div>
+<select class="form-select" required>
+  <option value="" selected disabled>選択してください</option>
+  <option value="1">項目</option>
+</select>
+<div class="invalid-feedback">選択されてません</div>
+<button class="btn btn-primary" type="submit">送信</button>
+</form>
+
+
+<br><br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+
+<script>
+(function () {
+  const forms = document.querySelectorAll('.my-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        if (!form.checkValidity()) {
+          e.preventDefault()
+          e.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script> 
+
+  </body>
+</html>

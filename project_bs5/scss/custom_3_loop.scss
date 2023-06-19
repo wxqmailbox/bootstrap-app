@@ -1,0 +1,9 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@each $color, $value in $theme-colors {  
+  $theme-colors: map-merge($theme-colors, ( "#{$color}-tint": tint-color($value, 50%)));
+}
+
+@import "../node_modules/bootstrap/scss/alert";

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head> 
+<!-- 
+  項　スクロールスパイ（リストグループ）
+-->
+<body>
+<div style="padding:50px;">
+
+<div class="container border">
+<div class="row">
+<div id="scrollspyMenuList" class="col-4 list-group p-3">
+  <a class="list-group-item list-group-item-action active" href="#scrollspyArea1">場所１</a>
+  <a class="list-group-item list-group-item-action" href="#scrollspyArea2">場所２</a>
+  <a class="list-group-item list-group-item-action" href="#scrollspyArea3">場所３</a>
+  <a class="list-group-item list-group-item-action" href="#scrollspyArea4">場所４</a>
+  <a class="list-group-item list-group-item-action" href="#scrollspyArea5">場所５</a>
+</div>
+<div class="col-8 border" data-bs-spy="scroll" data-bs-target="#scrollspyMenuList" data-bs-offset="0" 
+style="height:250px; overflow-y:scroll; position: relative;">
+  <h3 id="scrollspyArea1">場所１</h3>
+  <p style="height:350px">...</p>
+  <h3 id="scrollspyArea2">場所２</h3>
+  <p style="height:350px">...</p>
+  <h3 id="scrollspyArea3">場所３</h3>
+  <p style="height:350px">...</p>
+  <h3 id="scrollspyArea4">場所４</h3>
+  <p style="height:350px">...</p>
+  <h3 id="scrollspyArea5">場所５</h3>
+  <p style="height:350px">...</p>
+</div>
+</div> <!-- div.row -->
+</div> <!-- div.container -->
+
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

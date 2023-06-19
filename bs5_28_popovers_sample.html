@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　ポップオーバー
+<hr>
+<br><br><br>
+
+
+<button type="button" class="btn btn-secondary" 
+  data-bs-toggle="popover"
+  title="ポップオーバーのタイトル" 
+  data-bs-content="ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。">
+  ボタン
+</button>
+
+<br><br><br>
+<hr>
+項　ポップオーバーの方向
+<hr>
+<div style="padding-left:250px;">
+
+<br><br><br><br><br><br>
+
+<button type="button" class="btn btn-secondary" 
+  data-bs-placement="top"
+  data-bs-toggle="popover"
+  title="ポップオーバーのタイトル" 
+  data-bs-content="ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。">
+  ボタン
+</button>
+
+<br><br><br><br>
+
+<button type="button" class="btn btn-secondary" 
+  data-bs-placement="right"
+  data-bs-toggle="popover"
+  title="ポップオーバーのタイトル" 
+  data-bs-content="ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。">
+  ボタン
+</button>
+
+<br><br><br><br><br>
+
+<button type="button" class="btn btn-secondary" 
+  data-bs-placement="bottom"
+  data-bs-toggle="popover"
+  title="ポップオーバーのタイトル" 
+  data-bs-content="ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。">
+  ボタン
+</button>
+
+<br><br><br><br><br><br><br><br>
+
+<button type="button" class="btn btn-secondary" 
+  data-bs-placement="left"
+  data-bs-toggle="popover"
+  title="ポップオーバーのタイトル" 
+  data-bs-content="ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。ポップオーバーの本文。">
+  ボタン
+</button>
+
+</div>
+
+<br><br><br>
+<hr>
+項　マウスオーバー/フォーカス
+<hr>
+<br><br><br>
+テキスト
+<br><br><br>
+
+<span data-bs-toggle="popover"
+  data-bs-trigger="hover" data-bs-content="ポップオーバー">
+  テキスト
+</span>
+
+<br><br><br>
+●無効ボタン
+<br><br><br>
+
+<button type="button" class="btn btn-secondary" 
+  data-bs-toggle="popover"
+  data-bs-content="ポップオーバー"
+  disabled >
+  ボタン
+</button>
+
+<br><br><br>
+マウスオーバー
+<br><br><br>
+<span data-bs-toggle="popover"
+  data-bs-trigger="hover" data-bs-content="ポップオーバー">
+  <button type="button" class="btn btn-secondary" 
+    disabled >
+    ボタン
+  </button>
+</span>
+
+<br><br><br>
+マウスオーバーとフォーカス
+<br><br><br>
+
+<span data-bs-toggle="popover"
+  data-bs-trigger="hover focus" data-bs-content="ポップオーバー" 
+  tabindex="0">
+  <button type="button" class="btn btn-secondary" 
+    disabled >
+    ボタン
+  </button>
+</span>
+
+<br><br><br>
+●フォーカス移動で消去
+<br><br><br>
+
+<a class="btn btn-secondary"
+  data-bs-toggle="popover" 
+  data-bs-trigger="focus"
+  data-bs-content="ポップオーバー"
+  tabindex="0">
+  リンクボタン
+</a>
+
+<br><br><br>
+
+
+</div>
+
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript">
+      const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>    
+
+  </body>
+</html>

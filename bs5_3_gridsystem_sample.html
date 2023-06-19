@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <style>
+    .azure{
+      background: azure;
+      text-align: center;
+    }
+    .ivory{
+      background: ivory;
+      text-align: center;
+    }
+    </style>
+    <title>タイトル</title>
+  </head>
+<body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　グリッドシステム
+<hr>
+<br><br><br>
+
+
+<br><br><br>
+●colクラス - 列数が2であれば
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col azure">
+      6
+    </div>
+    <div class="col ivory">
+      6
+    </div>
+  </div>
+</div>
+<br><br><br>
+●colクラス - 列数が4であれば
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col azure">
+      3
+    </div>
+    <div class="col ivory">
+      3
+    </div>
+    <div class="col azure">
+      3
+    </div>
+    <div class="col ivory">
+      3
+    </div>
+  </div>
+</div>
+<br><br><br>
+●グリッド数を指定 - 4:8
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-4 azure">
+      4
+    </div>
+    <div class="col ivory">
+      8
+    </div>
+  </div>
+</div>
+<br><br><br>
+●グリッド数を指定 - 6:2:2:2
+<br><br><br>
+<div class="container">
+ <div class="row">
+    <div class="col-6 azure">
+      6
+    </div>
+    <div class="col ivory">
+      2
+    </div>
+    <div class="col azure">
+      2
+    </div>
+    <div class="col ivory">
+      2
+    </div>
+  </div>
+</div>
+<br><br><br>
+●グリッド数を指定 - 4:6:2 
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-4 azure">
+      col-4
+    </div>
+    <div class="col-6 ivory">
+      col-6
+    </div>
+    <div class="col-2 azure">
+      col-2
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+<hr>
+項　レスポンシブ
+<hr>
+<br><br><br>
+
+<br><br><br>
+横幅768px以上なら 4:6:2
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 azure">
+      col-md-4
+    </div>
+    <div class="col-md-6 ivory">
+      col-md-6
+    </div>
+    <div class="col-md-2 azure">
+      col-md-2
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+col-{breakpoint}-auto
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 azure">
+      col-lg-3
+    </div>
+    <div class="col-md-auto ivory">
+      col-md-auto
+    </div>
+    <div class="col-lg-3 azure">
+      col-lg-3
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col azure">
+      col
+    </div>
+    <div class="col-md-auto ivory">
+      col-md-auto
+    </div>
+    <div class="col-lg-3 azure">
+      col-lg-3
+    </div>
+  </div>  
+  
+</div>
+<br><br><br>
+
+<br><br><br>
+<hr>
+項　折り返し
+<hr>
+<br><br><br>
+
+<br><br><br>
+a:col-10, b:col-5, c:col
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-10 azure">a</div>
+    <div class="col-5 ivory">b</div>
+    <div class="col azure">c</div>
+  </div>
+</div>
+
+<br><br><br>
+さらにc:col-10
+<br><br><br>
+
+<div class="container">
+<div class="row">
+  <div class="col-10 azure">a</div>
+  <div class="col-5 ivory">b</div>
+  <div class="col-10 azure">c</div>
+</div>
+</div>
+
+<br><br><br>
+<hr>
+項　順番/オフセット
+<hr>
+<br><br><br>
+
+<br><br><br>
+●順番の指定
+<br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col azure">
+            a
+        </div>
+        <div class="col order-last ivory">
+            b
+        </div>
+        <div class="col order-first azure">
+            c
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+<br><br><br>
+ブレークポイント
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col azure">
+      a
+    </div>
+    <div class="col order-md-last ivory">
+      b
+    </div>
+    <div class="col order-md-first azure">
+      c
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<br><br><br>
+番数
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col order-2 azure">
+      a
+    </div>
+    <div class="col order-3 ivory">
+      b
+    </div>
+    <div class="col order-1 azure">
+      c
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+
+<br><br><br>
+オフセット
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-4 offset-5 azure">a</div>
+    <div class="col ivory">b</div>
+   </div>
+</div>
+
+<br><br><br>
+オフセット 折り返し
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-4 azure">a</div>
+    <div class="col-4 offset-5 ivory">b</div>
+  </div>
+</div>
+<br><br><br>
+
+<br><br><br>
+オフセット ブレークポイント
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 offset-md-5 azure">a</div>
+    <div class="col ivory">b</div>
+  </div>
+</div>
+<br><br><br>
+
+<br><br><br>
+<hr>
+項　列数指定
+<hr>
+<br><br><br>
+
+<br><br><br>
+●行の列数指定
+<br><br><br>
+<div class="container">
+<div class="row">
+  <div class="col azure">col</div>
+  <div class="col ivory">col</div>
+  <div class="col azure">col</div>
+  <div class="col ivory">col</div>
+</div><br>
+<div class="row row-cols-2">
+  <div class="col azure">col</div>
+  <div class="col ivory">col</div>
+  <div class="col azure">col</div>
+  <div class="col ivory">col</div>
+</div>
+</div>
+
+<br><br><br>
+・3列目のグリッド数が 3 の場合
+<br><br><br>
+<div class="container">
+<div class="row row-cols-4">
+  <div class="col azure">a col</div>
+  <div class="col ivory">b col</div>
+  <div class="col-3 azure">c col-3</div>
+  <div class="col ivory">d col</div>
+</div>
+</div>
+
+<br><br><br>
+・3列目のグリッド数が 2 の場合 
+<br><br><br>
+
+<div class="container">
+<div class="row row-cols-4">
+  <div class="col azure">a col</div>
+  <div class="col ivory">b col</div>
+  <div class="col-2 azure">c col-2</div>
+  <div class="col ivory">d col</div>
+</div>
+</div>
+
+<br><br><br>
+・3列目のグリッド数が 4 の場合 
+<br><br><br>
+<div class="container">
+<div class="row row-cols-4">
+  <div class="col azure">a col</div>
+  <div class="col ivory">b col</div>
+  <div class="col-4 azure">c col-4</div>
+  <div class="col ivory">d col</div>
+</div>
+</div>
+<hr>
+
+
+<br><br><br>
+●行の列数指定(ブレークポイント)
+<br><br><br>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+    <div class="col azure">col</div>
+    <div class="col ivory">col</div>
+    <div class="col azure">col</div>
+    <div class="col ivory">col</div>
+  </div>
+</div>
+
+
+
+
+<br><br><br>
+<hr>
+項　ガター
+<hr>
+<br><br><br>
+<div class="container border border-dark">
+  <div class="row">
+    <div class="col azure">
+      <div class="border border-dark">A</div>
+    </div>
+    <div class="col ivory">
+      <div class="border border-dark">B</div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+.gx-5
+<br><br><br>
+
+<div class="container border border-dark">
+  <div class="row gx-5">
+    <div class="col azure">
+      <div class="border border-dark">A</div>
+    </div>
+    <div class="col ivory">
+      <div class="border border-dark">B</div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+Overflowユーティリティ
+<br><br><br>
+
+<div class="container border border-dark overflow-hidden">
+  <div class="row gx-5">
+    <div class="col azure">
+      <div class="border border-dark">A</div>
+    </div>
+    <div class="col ivory">
+      <div class="border border-dark">B</div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+補足
+<br><br><br>
+
+<div class="border border-dark" style="width:50px;">ABCDEFG</div>
+<div class="border border-dark overflow-hidden" style="width:50px;">ABCDEFG</div>
+
+
+<br><br><br>
+<hr>
+項　その他
+<hr>
+
+<br><br><br>
+●ネスト
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-9 azure">
+      A
+      <div class="row">
+        <div class="col-4 azure">
+          a 
+        </div>
+        <div class="col ivory">
+          b 
+        </div>
+        <div class="col-4  azure">
+          c 
+        </div>
+      </div>
+    </div>
+    <div class="col ivory">
+    B
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+●container-fluid
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col azure">
+      container
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col azure">
+      container-fluid
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+
+
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

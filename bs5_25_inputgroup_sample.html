@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+
+<br><br><br>
+<hr>
+項　インプットグループ
+<hr>
+<br><br><br>
+<div class="input-group">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control">
+</div>
+<br><br><br>
+
+<br><br><br>
+<div class="input-group">
+  <span class="input-group-text">氏名</span>
+  <input type="text" class="form-control" placeholder="（ 姓 ）">
+  <input type="text" class="form-control" placeholder="（ 名 ）">
+</div>
+
+<br><br><br>
+<div class="input-group">
+  <span class="input-group-text">kg</span>
+  <span class="input-group-text">0.0</span>
+  <input type="text" class="form-control" placeholder="重さ">
+</div>
+
+<br><br><br>
+テキストエリア
+<br><br><br>
+
+<div class="input-group">
+  <span class="input-group-text">前</span>
+  <textarea class="form-control"></textarea>
+  <span class="input-group-text">後</span>
+</div>
+
+<br><br><br>
+セレクトボックスとボタン
+<br><br><br>
+
+<div class="input-group">
+  <select class="form-select">
+    <option selected>選択してください</option>
+    <option value="1">その１</option>
+    <option value="2">その２</option>
+  </select>
+  <button class="btn btn-outline-success" type="button">ボタン</button>
+</div>
+
+
+<br><br><br>
+アクセシビリティ
+<br><br><br>
+
+<div class="input-group">
+  <span class="input-group-text" id="addon1">@</span>
+  <input type="text" class="form-control" placeholder="ユーザ名" aria-label="username" aria-describedby="addon1">
+</div>
+
+
+
+
+<br><br><br>
+<hr>
+項　サイズ/折り返し
+<hr>
+<br><br><br>
+●サイズ
+<br><br><br>
+
+<div class="input-group input-group-lg">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control">
+</div><br>
+<div class="input-group input-group-sm">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control">
+</div>
+
+<br><br><br>
+●折り返し
+<br><br><br>
+
+<div class="input-group">
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+  <span class="input-group-text">default</span>
+</div>
+<br>
+<div class="input-group flex-nowrap">
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+  <span class="input-group-text">flex-nowrap</span>
+</div>
+
+
+
+
+<br><br><br>
+<hr>
+項　チェックボックス/ラジオボタン
+<hr>
+<br><br><br>
+<div class="input-group">
+  <div class="input-group-text">
+    <input type="checkbox" class="form-check-input">
+  </div>
+  <input type="text" class="form-control">
+</div>
+<br><br><br>
+<div class="input-group">
+  <div class="input-group-text">
+    <input type="radio"class="form-check-input">
+  </div>
+  <input type="text" class="form-control">
+</div>
+
+
+<br><br><br>
+<hr>
+項　ボタン/ドロップダウン
+<hr>
+<br><br><br>
+ボタン
+<br><br><br>
+
+<div class="input-group">
+  <button class="btn btn-outline-success" type="button">はい</button>
+  <button class="btn btn-outline-danger" type="button">いいえ</button>
+  <input type="text" class="form-control">
+</div>
+
+<br><br><br>
+ドロップダウン
+<br><br><br>
+
+<div class="input-group">
+  <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">選択してください</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">その１</a></li>
+    <li><a class="dropdown-item" href="#">その２</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">その３</a></li>
+  </ul>
+  <input type="text" class="form-control" >
+</div>
+
+<br><br><br>
+<br><br><br>
+ボタンとドロップダウン
+<br><br><br>
+
+<div class="input-group">
+  <button type="button" class="btn btn-outline-success">ボタン</button>
+  <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+    <span class="visually-hidden">トグルボタン</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">その１</a></li>
+    <li><a class="dropdown-item" href="#">その２</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">その３</a></li>
+  </ul>
+  <input type="text" class="form-control">
+</div>
+
+<br><br><br>
+
+
+<br><br><br>
+<hr>
+項　ファイル入力
+<hr>
+<br><br><br>
+<div class="input-group">
+  <input type="file" class="form-control" id="file1">
+  <label class="input-group-text" for="file1">アップロード</label>  
+</div>
+<br><br><br>
+<div class="input-group">
+  <input type="file" class="form-control">
+  <button class="btn btn-outline-success" type="button">ボタン</button>
+</div>
+
+
+<br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

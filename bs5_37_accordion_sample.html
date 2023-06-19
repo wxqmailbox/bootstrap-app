@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　アコーディオン
+<hr>
+<br><br><br>
+<div class="accordion">
+  <div class="accordion-item"> アイテム１ </div>
+  <div class="accordion-item"> アイテム２ </div>
+  <div class="accordion-item"> アイテム３ </div>
+</div>
+<br><br><br>
+<div class="accordion">
+  <div class="accordion-item">
+    <!-- ヘッダー -->
+    <h2 class="accordion-header">アイテム１</h2>
+    <!-- コラプス -->
+    <div class="accordion-collapse collapse show">
+      <!-- 内容 -->
+      <div class="accordion-body">内容１</div>
+    </div>
+  </div>
+  <div class="accordion-item"> アイテム２ </div>
+  <div class="accordion-item"> アイテム３ </div>
+</div>
+
+<br><br><br>
+・アコーディオンを作成する
+<br><br><br>
+
+<div class="accordion" id="accordionSample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+        アイテム１
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionSample">
+      <div class="accordion-body">内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+        アイテム２
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionSample">
+      <div class="accordion-body">内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+        アイテム３
+      </button>
+    </h2>
+    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionSample">
+      <div class="accordion-body">内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３</div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+●枠線をなくす
+<br><br><br>
+
+<div class="accordion accordion-flush" id="accordionFlush">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFlush1">
+        アイテム１
+      </button>
+    </h2>
+    <div id="collapseFlush1" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+      <div class="accordion-body">内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFlush2">
+        アイテム２
+      </button>
+    </h2>
+    <div id="collapseFlush2" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+      <div class="accordion-body">内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFlush3">
+        アイテム３
+      </button>
+    </h2>
+    <div id="collapseFlush3" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+      <div class="accordion-body">内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３</div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+<hr>
+項　アクセシビリティ
+<hr>
+<br><br><br>
+
+<div class="accordion" id="accordionAccess">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="head1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccess1" aria-expanded="false" aria-controls="collapseAccess1">
+        アイテム１
+      </button>
+    </h2>
+    <div id="collapseAccess1" class="accordion-collapse collapse" data-bs-parent="#accordionAccess" aria-labelledby="head1">
+      <div class="accordion-body">内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１内容１</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="head2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccess2" aria-expanded="false" aria-controls="collapseAccess2">
+        アイテム２
+      </button>
+    </h2>
+    <div id="collapseAccess2" class="accordion-collapse collapse" data-bs-parent="#accordionAccess" aria-labelledby="head2">
+      <div class="accordion-body">内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２内容２</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="head3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccess3" aria-expanded="false" aria-controls="collapseAccess3">
+        アイテム３
+      </button>
+    </h2>
+    <div id="collapseAccess3" class="accordion-collapse collapse" data-bs-parent="#accordionAccess" aria-labelledby="head3">
+      <div class="accordion-body">内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３内容３</div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br>
+
+
+</div>
+
+
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

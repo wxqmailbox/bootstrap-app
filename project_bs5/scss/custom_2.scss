@@ -1,0 +1,16 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+$spring: #b0f0b0;
+$summer: #90e0f0;
+$autumn: #906040;
+$winter: #404040;
+$season-colors: (
+  "spring": $spring,
+  "summer": $summer,
+  "autumn": $autumn,
+  "winter": $winter
+);
+$theme-colors: map-merge($theme-colors, $season-colors);
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/close";

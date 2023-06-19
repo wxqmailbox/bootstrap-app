@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+
+<br><br><br>
+<hr>
+項　フォーム
+<hr>
+<br><br><br>
+
+<br><br><br>
+Formクラスなし
+<br><br><br>
+
+<label>ラベル１</label>
+<input type="text" value="テキスト１">
+
+<br><br><br>
+Formクラスあり
+<br><br><br>
+
+<label class="form-label">ラベル２</label>
+<input class="form-control" type="text" value="テキスト２">
+
+<br><br><br>
+●divタグで囲む
+<br><br><br>
+<div class="mb-3">
+  <label class="form-label">タイトル</label>
+  <input class="form-control" type="text">
+</div>
+<div class="mb-3">
+  <label class="form-label">メッセージ</label>
+  <textarea class="form-control" rows="2"></textarea>
+</div>
+
+<br><br><br>
+●フォームの大きさ
+<br><br><br>
+
+<form>
+  <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"><br>
+  <input class="form-control" type="text"><br>
+  <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+</form>
+
+
+<br><br><br>
+<hr>
+項　無効/読み取り専用
+<hr>
+<br><br><br>
+
+<br><br><br>
+.form-control なし
+<br><br><br>
+<input type="text" value="disabled" disabled><br>
+<input type="text" value="readonly"  readonly><br>
+<input type="text" placeholder="disabled" disabled><br>
+<input type="text" placeholder="readonly" readonly><br>
+
+<br><br><br>
+.form-control あり
+<br><br><br>
+<input class="form-control" type="text" value="disabled" disabled>
+<input class="form-control" type="text" value="readonly"  readonly>
+<input class="form-control" type="text" placeholder="disabled" disabled>
+<input class="form-control" type="text" placeholder="readonly" readonly>
+<br><br><br>
+disabledと組み合わせ
+<br><br><br>
+<input class="form-control" type="text" value="disabled readonly" disabled readonly>
+<input class="form-control" type="text" placeholder="disabled readonly" disabled readonly>
+
+<br><br><br>
+プレーンテキストのスタイル
+<br><br><br>
+<input class="form-control-plaintext"  type="text" value=".form-control-plaintext readonly" readonly>
+<input class="form-control" type="text" value=".form-control readonly" readonly>
+<br><br><br>
+
+
+<br><br><br>
+<hr>
+項　セレクトボックス/データリスト
+<hr>
+<br><br><br>
+●セレクトボックス
+<br><br><br>
+
+<select class="form-select">
+  <option selected>Menu</option>
+  <option value="1">Coffee</option>
+  <option value="2">Cafe</option>
+  <option value="3">Tea</option>
+</select>
+
+<br><br><br>
+disabled
+<br><br><br>
+<select class="form-select" disabled>
+  <option selected>Menu</option>
+  <option value="1">Coffee</option>
+  <option value="2">Cafe</option>
+  <option value="3">Tea</option>
+</select>
+
+<br><br><br>
+multiple
+<br><br><br>
+<select class="form-select" multiple>
+  <option selected>Menu</option>
+  <option value="1">Coffee</option>
+  <option value="2">Cafe</option>
+  <option value="3">Tea</option>
+</select>
+
+<br><br><br>
+●大きさ
+<br><br><br>
+
+<select class="form-select form-select-lg">
+  <option selected>Menu</option>
+  <option value="1">Coffee</option>
+  <option value="2">Cafe</option>
+  <option value="3">Tea</option>
+</select>
+<br>
+<select class="form-select form-select-sm">
+  <option selected>Menu</option>
+  <option value="1">Coffee</option>
+  <option value="2">Cafe</option>
+  <option value="3">Tea</option>
+</select>
+
+<br><br><br>
+size
+<br><br><br>
+<select class="form-select" size="5">
+  <option selected>Menu</option>
+  <option value="1">Coffee</option>
+  <option value="2">Cafe</option>
+  <option value="3">Tea</option>
+</select>
+
+<br><br><br>
+●データリスト
+<br><br><br>
+<input class="form-control" list="drinkList" id="idDrinkList" placeholder="drink">
+<datalist id="drinkList">
+  <option value="Coffee">
+  <option value="Cafe">
+  <option value="Tea">
+</datalist>
+
+<br><br><br>
+<hr>
+項　チェックボックス/スイッチ/ラジオボタン
+<hr>
+<br><br><br>
+
+<br><br><br>
+チェックボックス
+<br><br><br>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="1" id="check1">
+  <label class="form-check-label" for="check1">チェック１</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="2" id="check2" checked>
+  <label class="form-check-label" for="check2">チェック２</label>
+</div>
+
+<br><br><br>
+disabled
+<br><br><br>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="1" id="check1" disabled>
+  <label class="form-check-label" for="check1">チェック１</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="2" id="check2" checked disabled>
+  <label class="form-check-label" for="check2">チェック２</label>
+</div>
+
+
+<br><br><br>
+スイッチ
+<br><br><br>
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" value="1" id="check1">
+  <label class="form-check-label" for="check1">チェック１</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" value="2" id="check2" checked>
+  <label class="form-check-label" for="check2">チェック２</label>
+</div>
+<br><br><br>
+ disabled
+<br><br><br>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" value="1" id="check1" disabled>
+  <label class="form-check-label" for="check1">チェック１</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" value="2" id="check2" checked disabled>
+  <label class="form-check-label" for="check2">チェック２</label>
+</div>
+<br><br><br>
+ラジオボタン
+<br><br><br>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="testradio1" value="1" id="radio1">
+  <label class="form-check-label" for="radio1">ラジオ１</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="testradio1" value="2" id="radio2" checked>
+  <label class="form-check-label" for="radio2">ラジオ２</label>
+</div>
+<br><br><br>
+disabled
+<br><br><br>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="testradio2" value="1" id="radio1" disabled>
+  <label class="form-check-label" for="radio1">ラジオ１</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="testradio2" value="2" id="radio2" checked disabled>
+  <label class="form-check-label" for="radio2">ラジオ２</label>
+</div>
+
+<br><br><br>
+横並び
+<br><br><br>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="testradio3" value="1" id="radio1">
+  <label class="form-check-label" for="radio1">ラジオ１</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="testradio3" value="2" id="radio2" checked>
+  <label class="form-check-label" for="radio2">ラジオ２</label>
+</div>
+
+<br><br><br>
+テキストラベル無し
+<br><br><br>
+<div>
+  <input class="form-check-input" type="checkbox" value="1" id="check1" aria-label="check1">
+</div>
+<div>
+  <input class="form-check-input" type="radio" name="testradio4" value="1" id="radio1" aria-label="radio1">
+</div>
+
+
+
+<br><br><br>
+<hr>
+項　トグルボタン
+<hr>
+<br><br><br>
+●チェックボックス
+<br><br><br>
+
+<input type="checkbox" class="btn-check" id="btn-check1" value="1" autocomplete="off">
+<label class="btn btn-primary" for="btn-check1">checkbox</label>
+
+<input type="checkbox" class="btn-check" id="btn-check2" value="2" autocomplete="off" checked>
+<label class="btn btn-primary" for="btn-check2">checked</label>
+
+<input type="checkbox" class="btn-check" id="btn-check3" value="3" autocomplete="off" disabled>
+<label class="btn btn-primary" for="btn-check3">disabled</label>
+
+<input type="checkbox" class="btn-check" id="btn-check4" value="4" autocomplete="off" checked disabled>
+<label class="btn btn-primary" for="btn-check4">checked disabled</label>
+
+<br><br><br>
+アウトライン
+<br><br><br>
+
+<input type="checkbox" class="btn-check" id="btn-o-check1" value="1" autocomplete="off">
+<label class="btn btn-outline-primary" for="btn-o-check1">checkbox</label>
+
+<input type="checkbox" class="btn-check" id="btn-o-check2" value="2" autocomplete="off" checked>
+<label class="btn btn-outline-primary" for="btn-o-check2">checked</label>
+
+<input type="checkbox" class="btn-check" id="btn-o-check3" value="3" autocomplete="off" disabled>
+<label class="btn btn-outline-primary" for="btn-o-check3">disabled</label>
+
+<input type="checkbox" class="btn-check" id="btn-o-check4" value="4" autocomplete="off" checked disabled>
+<label class="btn btn-outline-primary" for="btn-o-check4">checked disabled</label>
+
+<br><br><br>
+●ラジオボタン
+<br><br><br>
+
+<input type="radio" class="btn-check" name="btnradios" id="btnradio1" autocomplete="off">
+<label class="btn btn-primary" for="btnradio1">radio</label>
+
+<input type="radio" class="btn-check" name="btnradios" id="btnradio2" autocomplete="off" checked>
+<label class="btn btn-primary" for="btnradio2">checked</label>
+
+<input type="radio" class="btn-check" name="btnradios" id="btnradio3" autocomplete="off" disabled>
+<label class="btn btn-primary" for="btnradio3">disabled</label>
+
+
+
+
+
+<br><br><br>
+<hr>
+項　レンジ
+<hr>
+<br><br><br>
+●レンジ入力
+<br><br><br>
+
+<label for="range1" class="form-label">レンジ入力</label>
+<input type="range" class="form-range" id="range1">
+
+<br><br><br>
+disabled
+<br><br><br>
+
+<label for="range2" class="form-label">レンジ入力（ Disabled ）</label>
+<input type="range" class="form-range" id="range2" disabled>
+
+<br><br><br>
+最小/最大値、ステップ
+<br><br><br>
+
+<label for="range2" class="form-label">レンジ入力（ 0 - 5 , step:0.5 , value:1.5 ）</label>
+<input type="range" class="form-range"  min="0" max="5" step="0.5" value="1.5" id="range2">
+
+
+<br><br><br>
+<hr>
+項　ファイル入力/カラーピッカー
+<hr>
+<br><br><br>
+●ファイル入力
+<br><br><br>
+.form-control なし
+<br><br><br>
+
+<label>ファイル入力</label>
+<input type="file" id="file1">
+
+<br><br><br>
+.form-control あり
+<br><br><br>
+
+<label class="form-label">ファイル入力</label>
+<input  class="form-control" type="file" id="file2">
+
+<br><br><br>
+disabled属性
+<br><br><br>
+
+<label class="form-label">ファイル入力</label>
+<input  class="form-control" type="file" id="file3" disabled>
+
+<br><br><br>
+●カラーピッカー
+<br><br><br>
+.form-control-color なし
+<br><br><br>
+
+<input type="color" id="selectColor" value="#999999" title="色を選択">
+
+<br><br><br>
+.form-control-color あり
+<br><br><br>
+
+<input class="form-control form-control-color" type="color" id="selectColor" value="#999999" title="色を選択">
+
+
+<br><br><br>
+<hr>
+項　レイアウト
+<hr>
+<br><br><br>
+
+●余白ユーティリティ
+<br><br><br>
+
+<div class="mb-3">
+  <label class="form-label">テキスト１</label>
+  <input class="form-control" type="text">
+</div>
+<div class="mb-3">
+  <label class="form-label">テキスト２</label>
+  <input class="form-control" type="text">
+</div>
+
+<br><br><br>
+●グリッドシステム
+<br><br><br>
+
+<div class="row g-2">
+  <div class="col-2">
+    <input type="text" class="form-control" value="col-2">
+  </div>
+  <div class="col-4">
+    <select class="form-select">
+      <option value="">col-4</option>
+    </select>
+  </div>
+  <div class="col-6">
+    <input type="text" class="form-control" value="col-6">
+  </div>
+</div>
+
+<br><br><br>
+●垂直配置
+<br><br><br>
+
+<div class="row mb-3">
+  <label class="col-sm-2 col-form-label">テキスト１</label>
+  <div class="col-sm-10">
+    <input class="form-control" type="text">
+  </div>
+</div>
+<div class="row mb-3">
+  <label class="col-sm-2 col-form-label">テキスト２</label>
+  <div class="col-sm-10">
+    <input class="form-control" type="text">
+  </div>
+</div>
+
+
+<br><br><br>
+垂直中央
+<br><br><br>
+
+<div class="row">
+  <label class="col-sm-2 form-label">form-label</label>
+  <div class="col-sm-10">
+    <input class="form-control" type="text">
+  </div>
+</div>
+<br>
+<div class="row">
+  <label class="col-sm-2 col-form-label">col-form-label</label>
+  <div class="col-sm-10">
+    <input class="form-control" type="text">
+  </div>
+</div>
+
+<br><br><br>
+サイズ
+<br><br><br>
+
+<div class="row mb-3">
+  <label class="col-sm-2 col-form-label-sm">col-form-label-sm</label>
+  <div class="col-sm-10">
+    <input class="form-control form-control-sm" type="text">
+  </div>
+</div>
+<div class="row mb-3">
+  <label class="col-sm-2 col-form-label-lg">col-form-label-lg</label>
+  <div class="col-sm-10">
+    <input class="form-control form-control-lg" type="text">
+  </div>
+</div>
+
+<br><br><br>
+●Flexユーティリティ
+<br><br><br>
+
+<form class="row">
+  <div class="col-auto">
+    <input class="form-control" type="text">
+  </div>
+  <div class="col-auto">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">チェック</label>
+    </div>
+  </div>
+</form>
+
+<br><br><br>
+交差軸の中央
+<br><br><br>
+
+<form class="row align-items-center">
+  <div class="col-auto">
+    <input class="form-control" type="text">
+  </div>
+  <div class="col-auto">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">チェック</label>
+    </div>
+  </div>
+</form>
+
+<br><br><br>
+●インライン
+<br><br><br>
+
+<form class="row row-cols-md-auto align-items-center gy-3">
+  <div class="col-12">
+    <input class="form-control" type="text">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">チェック</label>
+    </div>
+  </div>
+</form>
+
+
+
+<br><br><br>
+<hr>
+項　フローティングラベル
+<hr>
+<br><br><br>
+●フローティングラベル
+<br><br><br>
+<div class="form-floating">
+  <input type="text" class="form-control" placeholder="input your name">
+  <label>User name</label>
+</div>
+
+<br><br><br>
+value値指定
+<br><br><br>
+
+<div class="form-floating">
+  <input type="text" class="form-control"  value="my name" placeholder="input your name">
+  <label>User name</label>
+</div>
+
+<br><br><br>
+●バリデーションクラス
+<br><br><br>
+
+<div class="form-floating">
+  <input type="text" class="form-control is-valid" placeholder="input your name">
+  <label>User name</label>
+</div>
+<br>
+<div class="form-floating">
+  <input type="text" class="form-control is-invalid" placeholder="input your name">
+  <label>User name</label>
+</div>
+
+<br><br><br>
+●テキストエリア
+<br><br><br>
+
+<div class="form-floating">
+  <textarea class="form-control" placeholder="input your message"></textarea>
+  <label>Message</label>
+</div>
+
+<br><br><br>
+カスタムCSS
+<br><br><br>
+
+<div class="form-floating">
+  <textarea class="form-control" placeholder="input your message" style="height:100px"></textarea>
+  <label>Message</label>
+</div>
+
+<br><br><br>
+●セレクトボックス
+<br><br><br>
+
+<div class="form-floating">
+  <select class="form-select">
+    <option selected>Menu</option>
+    <option value="1">Coffee</option>
+    <option value="2">Cafe</option>
+    <option value="3">Tea</option>
+  </select>
+  <label>Label</label>
+</div>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

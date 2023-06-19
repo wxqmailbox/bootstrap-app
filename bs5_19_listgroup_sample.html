@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+
+<br><br><br>
+<hr>
+項　リストグループ
+<hr>
+<br><br><br>
+
+<ul class="list-group">
+  <li class="list-group-item">アイテム１</li>
+  <li class="list-group-item">アイテム２</li>
+  <li class="list-group-item">アイテム３</li>
+</ul>
+
+<br><br><br>
+●アクティブ/無効
+<br><br><br>
+
+<ul class="list-group">
+  <li class="list-group-item active">アイテム１</li>
+  <li class="list-group-item">アイテム２</li>
+  <li class="list-group-item disabled" aria-disabled="true">アイテム３</li>
+</ul>
+
+<br><br><br>
+●順序の表示
+<br><br><br>
+
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item">アイテム１</li>
+  <li class="list-group-item">アイテム２</li>
+  <li class="list-group-item">アイテム３</li>
+</ol>
+
+
+<br><br><br>
+<hr>
+項　リンク/ボタン
+<hr>
+<br><br><br>
+●リンク
+<br><br><br>
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">
+   アイテム１
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+   アイテム２
+  </a>
+  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">
+   アイテム３
+  </a>
+</div>
+
+<br><br><br>
+●ボタン
+<br><br><br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    アイテム１
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">
+  アイテム２
+  </button>
+  <button type="button" class="list-group-item list-group-item-action" disabled>
+  アイテム３</button>
+</div>
+
+
+<br><br><br>
+<hr>
+項　リストアイテムの色
+<hr>
+<br><br><br>
+●リストアイテムの色
+<br><br><br>
+
+<ul class="list-group">
+  <li class="list-group-item">指定無し</li>
+  <li class="list-group-item list-group-item-primary">list-group-item-primary</li>
+  <li class="list-group-item list-group-item-secondary">list-group-item-secondary</li>
+  <li class="list-group-item list-group-item-success">list-group-item-success</li>
+  <li class="list-group-item list-group-item-danger">list-group-item-danger</li>
+  <li class="list-group-item list-group-item-warning">list-group-item-warning</li>
+  <li class="list-group-item list-group-item-info">list-group-item-info</li>
+  <li class="list-group-item list-group-item-light">list-group-item-light</li>
+  <li class="list-group-item list-group-item-dark">list-group-item-dark</li>
+</ul>
+
+<br><br><br>
+アイテムアクション
+<br><br><br>
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">指定無し</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">list-group-item-primary</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">list-group-item-secondary</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">list-group-item-success</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">list-group-item-danger</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">list-group-item-warning</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">list-group-item-info</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">list-group-item-light</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">list-group-item-dark</a>
+</div>
+
+
+<br><br><br>
+<hr>
+項　枠をなくす
+<hr>
+<br><br><br>
+
+<ul class="list-group list-group-flush m-3" style="max-width: 300px;">
+  <li class="list-group-item">アイテム１</li>
+  <li class="list-group-item">アイテム２</li>
+  <li class="list-group-item">アイテム３</li>
+</ul>
+
+
+<br><br><br>
+<hr>
+項　水平方向
+<hr>
+<br><br><br>
+
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item">アイテム１</li>
+  <li class="list-group-item">アイテム２</li>
+  <li class="list-group-item">アイテム３</li>
+</ul>
+
+<br><br><br>
+広げる
+<br><br><br>
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item flex-fill">アイテム１</li>
+  <li class="list-group-item flex-fill">アイテム２</li>
+  <li class="list-group-item flex-fill">アイテム３</li>
+</ul>
+
+<br><br><br>
+レスポンシブ
+<br><br><br>
+
+<ul class="list-group list-group-horizontal-md">
+  <li class="list-group-item">アイテム１</li>
+  <li class="list-group-item">アイテム２</li>
+  <li class="list-group-item">アイテム３</li>
+</ul>
+
+
+<br><br><br>
+<hr>
+項　チェックボックス/ラジオボタン
+<hr>
+<br><br><br>
+●チェックボックス
+<br><br><br>
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" id="check1" value="1" aria-label="アイテム１" checked>
+    アイテム１
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" id="check2" value="2" aria-label="アイテム２">
+    アイテム２
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="checkbox" id="check3" value="3" aria-label="アイテム３">
+     アイテム３
+  </li>
+</ul>
+
+
+<br><br><br>
+●ラジオボタン
+<br><br><br>
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <input class="form-check-input" type="radio" id="radio1" name="rd" value="1" aria-label="アイテム１" checked>
+    アイテム１
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="radio" id="radio2" name="rd" value="2"  aria-label="アイテム２">
+    アイテム２
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input" type="radio" id="radio3" name="rd" value="3" aria-label="アイテム３">
+     アイテム３
+  </li>
+</ul>
+
+
+<br><br><br>
+<hr>
+項　プラグイン
+<hr>
+<br><br><br>
+<div class="list-group" role="tablist">
+  <a class="list-group-item list-group-item-action active" id="item1" data-bs-toggle="list" href="#tab1" role="tab" aria-controls="item1">タブ１</a>
+  <a class="list-group-item list-group-item-action" id="item2" data-bs-toggle="list" href="#tab2" role="tab" aria-controls="item2">タブ２</a>
+  <a class="list-group-item list-group-item-action" id="item3" data-bs-toggle="list" href="#tab3" role="tab" aria-controls="item3">タブ３</a>
+</div>
+<div class="tab-content mt-3" id="tabcontent">
+  <div class="tab-pane fade show active alert alert-primary" id="tab1" role="tabpanel" aria-labelledby="item1">タブ１の説明文</div>
+  <div class="tab-pane fade alert alert-warning" id="tab2" role="tabpanel" aria-labelledby="item2">タブ２の説明文</div>
+  <div class="tab-pane fade alert alert-danger" id="tab3" role="tabpanel" aria-labelledby="item3">タブ３の説明文</div>
+</div>
+
+<br><br><br>
+</div>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

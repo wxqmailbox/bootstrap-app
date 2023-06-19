@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.my-border {
+  border: solid;
+}
+@include media-breakpoint-up(md) {
+  .my-border-md {
+    border: double;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .my-border-xl {
+    border: groove;
+  }
+}

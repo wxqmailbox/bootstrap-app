@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- このmeta定義も必要 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <title>タイトル</title>
+  </head>
+  <body>
+<div style="padding:50px;">
+
+<br><br><br>
+<hr>
+項　ナビの基本
+<hr>
+<br><br><br>
+●アクティブ/無効
+<br><br><br>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム１</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" aria-current="page">アイテム２</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1">アイテム３</a>
+  </li>
+</ul>
+
+<br><br><br>
+<hr>
+項　配置
+<hr>
+<br><br><br>
+中央揃え
+<br><br><br>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム１</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム２</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム３</a>
+  </li>
+</ul>
+<br><br><br>
+右揃え
+<br><br><br>
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム１</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム２</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム３</a>
+  </li>
+</ul>
+<br><br><br>
+均等
+<br><br><br>
+<ul class="nav justify-content-between">
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム１</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム２</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム３</a>
+  </li>
+</ul>
+<br><br><br>
+等間隔
+<br><br><br>
+<ul class="nav justify-content-around">
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム１</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム２</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム３</a>
+  </li>
+</ul>
+<br><br><br>
+垂直
+<br><br><br>
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム１</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム２</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">アイテム３</a>
+  </li>
+</ul>
+<hr>
+<br><br><br>
+
+<br><br><br>
+<hr>
+項　タブ
+<hr>
+<br><br><br>
+<nav class="nav nav-tabs" id="nav-tab" role="tablist">
+  <a class="nav-link active" id="nav-item1-tab" data-bs-toggle="tab" href="#nav-item1" role="tab" aria-controls="nav-item1" aria-selected="true">アイテム１</a>
+  <a class="nav-link" id="nav-item2-tab" data-bs-toggle="tab" href="#nav-item2" role="tab" aria-controls="nav-item2" aria-selected="false">アイテム２</a>
+  <a class="nav-link" id="nav-item3-tab" data-bs-toggle="tab" href="#nav-item3" role="tab" aria-controls="nav-item3" aria-selected="false">アイテム３</a>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show  active" id="nav-item1" role="tabpanel" aria-labelledby="nav-item1-tab">
+  アイテム１のパネル
+  </div>
+  <div class="tab-pane fade" id="nav-item2" role="tabpanel" aria-labelledby="nav-item2-tab">
+  アイテム２のパネル
+  </div>
+  <div class="tab-pane fade" id="nav-item3" role="tabpanel" aria-labelledby="nav-item3-tab">
+  アイテム３のパネル
+  </div>
+</div>
+
+<br><br><br>
+<hr>
+項　その他
+<hr>
+<br><br><br>
+.flex-fill
+<br><br><br>
+
+<nav class="nav"> 
+  <a class="nav-link border flex-fill" href="#">アイテム</a>
+  <a class="nav-link bg-warning flex-fill" href="#">長い文字のアイテム</a>
+  <a class="nav-link border flex-fill" href="#">アイテム</a>
+</nav>
+
+<br><br><br>
+.nav-fill
+<br><br><br>
+
+<nav class="nav nav-fill"> 
+  <a class="nav-link border" href="#">アイテム</a>
+  <a class="nav-link bg-warning" href="#">長い文字のアイテム</a>
+  <a class="nav-link border" href="#">アイテム</a>
+</nav>
+
+<br><br><br>
+.nav-justified
+<br><br><br>
+<nav class="nav nav-justified"> 
+  <a class="nav-link border" href="#">アイテム</a>
+  <a class="nav-link bg-warning" href="#">長い文字のアイテム</a>
+  <a class="nav-link border" href="#">アイテム</a>
+</nav>
+
+<br><br><br>
+●ピル形式
+<br><br><br>
+<nav class="nav nav-pills"> 
+  <a class="nav-link" href="#">アイテム１</a>
+  <a class="nav-link active" href="#" aria-current="page">アイテム２</a>
+  <a class="nav-link disabled" href="#" tabindex="-1">アイテム３</a>
+</nav>
+
+<br><br><br>
+●水平方向のタブ
+<br><br><br>
+
+<div class="d-flex flex-row align-items-start">
+  <div class="nav nav-pills flex-column me-3" id="v-nav-tab" role="tablist">
+    <a class="nav-link active" id="v-nav-item1-tab" data-bs-toggle="tab" href="#v-nav-item1" role="tab" aria-controls="v-nav-item1" aria-selected="true">アイテム１</a>
+    <a class="nav-link" id="v-nav-item2-tab" data-bs-toggle="tab" href="#v-nav-item2" role="tab" aria-controls="v-nav-item2" aria-selected="false">アイテム２</a>
+    <a class="nav-link" id="v-nav-item3-tab" data-bs-toggle="tab" href="#v-nav-item3" role="tab" aria-controls="v-nav-item3" aria-selected="false">アイテム３</a>
+  </div>
+  <div class="tab-content" id="v-nav-tabContent">
+    <div class="tab-pane fade show  active" id="v-nav-item1" role="tabpanel" aria-labelledby="v-nav-item1-tab">
+    アイテム１のパネル
+    </div>
+    <div class="tab-pane fade" id="v-nav-item2" role="tabpanel" aria-labelledby="v-nav-item2-tab">
+    アイテム２のパネル
+    </div>
+    <div class="tab-pane fade" id="v-nav-item3" role="tabpanel" aria-labelledby="v-nav-item3-tab">
+    アイテム３のパネル
+    </div>
+  </div>
+</div>
+
+
+<br><br><br>
+
+
+</div>
+
+
+    <script type="text/javascript" src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
